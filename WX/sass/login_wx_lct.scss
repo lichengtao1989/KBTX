@@ -1,0 +1,163 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.logo_img {
+    @include block;
+    @include mag;
+    @include wh(120rem/$base, 34rem/$base);
+    @include baimg('../images/public/img1.png');
+    margin-top: 146rem/$base;
+    margin-bottom: 184rem/$base;
+}
+
+.phone,
+.password {
+    @include block;
+    @include mag;
+    @include wh(514rem/$base, 55rem/$base);
+    @include li(47rem/$base);
+    box-sizing: border-box;
+    padding-left: 13rem/$base;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333333;
+    @include fo(24rem/$base);
+}
+
+.phone {
+    margin-bottom: 23rem/$base;
+}
+
+.text_p {
+    @include block;
+    margin-top: 25rem/$base;
+    margin-bottom: 52rem/$base;
+    margin-left: 547rem/$base;
+    @include fo(19rem/$base);
+}
+
+.btn_login {
+    @include block;
+    @include te;
+    @include li(54rem/$base);
+    @include wh(414rem/$base, 54rem/$base);
+    @include ba(#328877);
+    @include co(#fff);
+    @include mag;
+    @include border-radius(14rem/$base);
+    @include fo(28rem/$base);
+}
+
+.ksdl {
+    @include ov;
+    margin-top: 67rem/$base;
+    margin-bottom: 27rem/$base;
+}
+
+.line1,
+.text_1,
+.line2 {
+    @include float;
+}
+
+.line1,
+.line2 {
+    @include wh(310rem/$base, 2rem/$base);
+    @include ba(#7f7f7f);
+    margin-top: 12rem/$base;
+}
+
+.line2 {
+    width: 310rem/$base;
+}
+
+.text_1 {
+    @include fo(19rem/$base);
+    @include co(#a3a3a3);
+    width: 130rem/$base;
+    @include te;
+}
+
+.show3 {
+    @include ov;
+    @include pr;
+}
+
+.show3 a {
+    @include float;
+    width: 33.3333%;
+    @include te;
+    @include co(#585858);
+    @include fo(19rem/$base);
+}
+
+.show3 a p {
+    padding-top: 11rem/$base;
+}
+
+.last_t {
+    margin-top: 42rem/$base;
+    @include te;
+    @include fo(19rem/$base);
+    @include co(#585858);
+    a {
+        @include co(#585858);
+        font-weight: bold;
+    }
+}

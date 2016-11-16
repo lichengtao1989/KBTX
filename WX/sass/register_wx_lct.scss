@@ -1,0 +1,121 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.logo_img {
+    @include block;
+    @include mag;
+    @include wh(120rem/$base, 34rem/$base);
+    @include baimg('../images/public/img1.png');
+    margin-top: 146rem/$base;
+    margin-bottom: 184rem/$base;
+}
+
+.divinput {
+    @include pr;
+    height: 56rem/$base;
+    @include ov;
+    margin-bottom: 32rem/$base;
+    input {
+        outline: none;
+        border: none;
+        border-bottom: 2rem/$base solid #333333;
+        @include block;
+        @include wh(514rem/$base, 53rem/$base);
+        margin-left: 118rem/$base;
+        box-sizing: border-box;
+        padding-left: 16rem/$base;
+        @include fo(24rem/$base);
+    }
+}
+
+.getcode {
+    @include po;
+    @include wh(125rem/$base, 33rem/$base);
+    @include li(33rem/$base);
+    @include te;
+    bottom: 9rem/$base;
+    right: 128rem/$base;
+    border: 1px solid #6f6f6f;
+    @include border-radius(6rem/$base);
+    z-index: 2;
+}
+
+.btn_register {
+    @include wh(414rem/$base, 55rem/$base);
+    @include li(55rem/$base);
+    @include te;
+    @include co(#fff);
+    @include ba(#328877);
+    @include border-radius(10rem/$base);
+    @include mag;
+    margin-top: 75rem/$base;
+    margin-bottom: 36rem/$base;
+    @include fo(28rem/$base);
+}
+
+.last_part {
+    padding-left: 230rem/$base;
+    @include co(#686868);
+    @include fo(18.74rem/$base);
+}
+
+.last_part a {
+    @include co(#686868);
+}
+.sp_text{vertical-align:4rem/$base;}
