@@ -1,0 +1,113 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+@import "public";
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.text1 {
+    padding-top: 36rem/$base;
+    padding-bottom: 46rem/$base;
+    @include te;
+    @include co(#686868);
+    @include fo(28rem/$base);
+}
+
+.circle {
+    @include wh(168rem/$base, 168rem/$base);
+    @include border-radius(50%);
+    border: 5rem/$base solid #939393;
+    @include mag;
+    box-sizing: border-box;
+    padding-top: 57rem/$base;
+    font-weight: lighter;
+    .val_show {
+        @include te;
+        @include fo(35rem/$base);
+    }
+    .text2 {
+        @include te;
+        @include fo(28rem/$base);
+        padding-top: 12rem/$base;
+    }
+}
+
+.list {
+    @include pr;
+    @include ov;
+    border-top: 2rem/$base solid #b2b2b2;
+    margin-top:43rem/$base;
+}
+
+.listcont {
+    @include block;
+    height: 88rem/$base;
+    @include pr;
+    @include co(#585858);
+    box-sizing: border-box;
+    padding-left: 62rem/$base;
+    padding-top: 19rem/$base;
+    border-bottom: 2rem/$base solid #b2b2b2;
+    .money {
+        @include po;
+        top: 40rem/$base;
+        right: 40rem/$base;
+    }
+    .time {
+        padding-top: 12rem/$base;
+        @include co(#a3a3a3);
+    }
+}

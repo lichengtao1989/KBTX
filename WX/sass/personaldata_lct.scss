@@ -1,0 +1,138 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+@import "public";
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+
+
+.imgmsg {
+    margin-top: 101rem/$base;
+}
+
+.pic1 {
+    @include wh(260rem/$base, 260rem/$base);
+    @include block;
+    @include mag;
+}
+
+.nc {
+    @include fo(28rem/$base);
+    @include te;
+    margin-top: 34rem/$base;
+    margin-bottom: 51rem/$base;
+}
+
+.edit_info {
+    height: 65rem/$base;
+    @include pr;
+}
+
+.po_edit {
+    @include po;
+    @include wh(78rem/$base, 78rem/$base);
+    @include te;
+    line-height: 78rem/$base;
+    @include co(#fff);
+    @include ba(#328877);
+    top: 0;
+    right: 35rem/$base;
+    @include border-radius(50%);
+    @include fo(21rem/$base);
+    z-index: 2;
+    @include ov;
+}
+
+.line1,
+.text_1,
+.line2 {
+    @include float;
+}
+
+.line1 {
+    margin-top: 38.92rem/$base;
+    @include wh(254rem/$base, 5rem/$base);
+    @include ba(#b9b9b9);
+    margin-left: 51rem/$base;
+}
+
+.line2 {
+    margin-top: 38.92rem/$base;
+    @include wh(175rem/$base, 5rem/$base);
+    @include ba(#b9b9b9);
+}
+
+.text_1 {
+    width: 136rem/$base;
+    @include fo(28rem/$base);
+    @include te;
+    padding-top: 25.92rem/$base;
+}
+
+.infopart {
+    width: 641rem/$base;
+    @include li(62rem/$base);
+    @include mag;
+    @include co(#747373);
+    border-bottom: 2rem/$base solid #b9b9b9;
+    @include pr;
+}
+.infopart .csrqsx{@include po;top:0;right:0;}
+.edit_info{margin-bottom:10rem/$base;}
+.line3{width:254rem/$base;}
+.edit_info2{margin-top:28rem/$base;}
+.sp_info31{@include co(#328877);}
+@import "footer";

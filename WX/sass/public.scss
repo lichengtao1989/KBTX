@@ -1,0 +1,17 @@
+
+.logo_img {
+    @include block;
+    @include mag;
+    @include wh(220rem/$base, 130rem/$base);
+    @include baimg('../images/public/img1.png');
+    margin-top: 146rem/$base;
+    margin-bottom: 184rem/$base;
+}
+.top {
+    @include te;
+    @include li(112rem/$base);
+    width:750rem/$base;
+    @include ba(#328877);
+    @include fo(35.16rem/$base);
+    @include co(#fff);
+}

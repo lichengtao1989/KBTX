@@ -1,0 +1,89 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+@import "public";
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+
+
+.imgmsg {
+    margin-top: 101rem/$base;
+}
+
+.pic1 {
+    @include wh(260rem/$base, 260rem/$base);
+    @include block;
+    @include mag;
+}
+
+.nc {
+    @include fo(28rem/$base);
+    @include te;
+    margin-top: 34rem/$base;
+    margin-bottom: 96rem/$base;
+}
+.linl_part a{@include block;}
+.linka{@include li(65rem/$base);@include pr;border-bottom:2rem/$base solid #c7c7c7;box-sizing:border-box;padding-left:51rem/$base;padding-top:10rem/$base;}
+.sp_text{@include po;top:0;right:49rem/$base;@include co(#585858);}
+.linka{
+    img{@include block;}
+}
+.img1{@include wh(39rem/$base,47rem/$base);}
+.img2{@include wh(47rem/$base,46rem/$base);}
+.img3{@include wh(41rem/$base,40rem/$base);}
+.img4{@include wh(42rem/$base,48rem/$base);}
+.img5{@include wh(42rem/$base,41rem/$base);}
+@import "footer";

@@ -1,0 +1,93 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.logo_img {
+    @include block;
+    @include mag;
+    @include wh(220rem/$base, 130rem/$base);
+    @include baimg('../images/public/img1.png');
+    margin-top: 146rem/$base;
+    margin-bottom: 103rem/$base;
+}
+
+.version {
+    @include fo(24rem/$base);
+    @include co(#585858);
+    @include te;
+    margin-bottom: 166rem/$base;
+}
+
+.next1 {
+    @include li(48rem/$base);
+    @include fo(24rem/$base);
+    @include pr;
+    width: 514rem/$base;
+    border-bottom: 3rem/$base solid #b2b2b2;
+    @include mag;
+    margin-bottom:37rem/$base;
+    a {
+        @include co(#585858);
+        @include po;
+        left: 372rem/$base;
+        z-index: 2;
+    }
+    .spanar {
+        margin-left: 22rem/$base;
+    }
+}

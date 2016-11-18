@@ -12,7 +12,7 @@ $base:50;
 
 /*main style begin*/
 
-
+@import "public";
 /*main style begin*/
 
 @keyframes opacityShow {
@@ -57,14 +57,7 @@ $base:50;
     @include fo(24rem/$base);
 }
 
-.logo_img {
-    @include block;
-    @include mag;
-    @include wh(120rem/$base, 34rem/$base);
-    @include baimg('../images/public/img1.png');
-    margin-top: 146rem/$base;
-    margin-bottom: 184rem/$base;
-}
+
 
 .divinput {
     @include pr;

@@ -14,6 +14,7 @@ $base:50;
 
 
 /*main style begin*/
+@import "public";
 
 @keyframes opacityShow {
     0% {
@@ -222,60 +223,4 @@ $base:50;
     text-align: center;
 }
 
-//footer
-.footer {
-    @include ov;
-}
-
-.kb {
-    height: 96rem/$base;
-    @include ba(#fff);
-}
-
-.footer {
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    z-index: 2;
-    @include co(#fff);
-    @include ba(#328877);
-    @include fo(17rem/$base);
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    width:750rem/$base;
-}
-
-.foot1,
-.foot2,
-.foot3 {
-    @include float;
-    width: 250rem/$base;
-    @include te;
-    box-sizing: border-box;
-    padding-top: 8rem/$base;
-    @include block;
-}
-
-.foot1 img {
-    @include block;
-    @include wh(62rem/$base, 58rem/$base);
-    @include mag;
-}
-
-.foot2 img {
-    @include block;
-    @include wh(65rem/$base, 57rem/$base);
-    @include mag;
-}
-
-.foot3 img {
-    @include block;
-    @include wh(52rem/$base, 58rem/$base);
-    @include mag;
-}
-
-.foot_p {
-    padding-top: 7rem/$base;
-}
-
-//footer
+@import "footer";

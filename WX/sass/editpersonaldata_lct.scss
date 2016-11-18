@@ -1,0 +1,122 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.top {
+    @include te;
+    @include li(112rem/$base);
+    @include ba(#328877);
+    @include fo(35.16rem/$base);
+    @include co(#fff);
+}
+
+.maininfo {
+    margin-top: 32rem/$base;
+}
+
+.infoi {
+    @include wh(641rem/$base, 80rem/$base);
+    @include mag;
+    @include li(80rem/$base);
+    @include pr;
+    border-bottom: 2rem/$base solid #b9b9b9;
+    @include co(#747373);
+}
+
+.right_part {
+    @include po;
+    top: 0;
+    right: 0;
+}
+
+.img01 {
+    @include block;
+    @include wh(64rem/$base, 64rem/$base);
+    @include border-radius(50%);
+}
+
+.infoi {
+    input {
+        border: none;
+        outline: none;
+    }
+}
+
+.input1 {
+    text-align: right;
+}
+
+.astyle {
+    @include co(#328877);
+}
+
+.save {
+    @include block;
+    @include mag;
+    @include wh(665rem/$base, 106rem/$base);
+    @include te;
+    @include li(106rem/$base);
+    @include co(#fff);
+    @include ba(#328877);
+    @include fo(28rem/$base);
+    font-weight: bold;
+    margin-top:135rem/$base;
+    @include border-radius(15rem/$base);
+}
+
+@import "footer";

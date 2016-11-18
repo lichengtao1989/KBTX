@@ -1,0 +1,157 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+@import "public";
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+//realname
+html,
+body {
+    width: 100%;
+    height: 100%;
+    @include ba(#e0dfdf);
+}
+
+.realname_content {
+    @include ov;
+    @include pr;
+    .text1 {
+        @include li(81rem/$base);
+        @include ba(#e0dfdf);
+        @include co(#4c4c4c);
+        @include fo(24rem/$base);
+        box-sizing: border-box;
+        padding-left: 42rem/$base;
+        border-bottom: 2rem/$base solid #b2b2b2;
+    }
+    .con1 {
+        @include li(82rem/$base);
+        @include pr;
+        @include fo(24rem/$base);
+        @include ba(#fff);
+        box-sizing: border-box;
+        padding-left: 42rem/$base;
+        border-bottom: 2rem/$base solid #b2b2b2;
+        input {
+            border: none;
+            outline: none;
+            @include po;
+            top: 30rem/$base;
+            right: 50rem/$base;
+            text-align: right;
+            width: 40%;
+            z-index: 2;
+            @include ba(#fff);
+        }
+    }
+    .square1 {
+        @include ba(#b1b1b1);
+        border-bottom: 3rem/$base solid #a1a1a1;
+        height: 41rem/$base;
+    }
+    .pic2 {
+        @include ba(#fff);
+        @include ov;
+        @include pr;
+        height: 288rem/$base;
+        border-bottom: 2rem/$base solid #b2b2b2;
+    }
+    .picleft,
+    .picright {
+        @include float;
+        width: 50%;
+    }
+    .zm {
+        @include wh(306rem/$base, 204rem/$base);
+        @include te;
+        line-height: 204rem/$base;
+        border: 1px solid #9d9d9d;
+        @include border-radius(10rem/$base);
+        @include mag;
+        margin-top: 21rem/$base;
+    }
+    .pic2 p {
+        @include te;
+        @include li(61rem/$base);
+    }
+    .cont1 {
+        p {
+            @include te;
+            @include fo(19rem/$base);
+        }
+        .p1 {
+            margin-top: 55rem/$base;
+            margin-bottom: 14rem/$base;
+        }
+        .p2 {
+            margin-bottom: 145rem/$base;
+        }
+    }
+    .btn_tj {
+        @include wh(665rem/$base, 106rem/$base);
+        @include li(106rem/$base);
+        @include fo(28rem/$base);
+        @include co(#fff);
+        @include ba(#328877);
+        @include mag();
+        @include border-radius(15rem/$base);
+        @include te;
+        font-weight: bold;
+        letter-spacing: 5rem/$base;
+    }
+}
+
+//realname
