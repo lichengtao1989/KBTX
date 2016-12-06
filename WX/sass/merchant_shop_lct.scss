@@ -1,0 +1,304 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+    @include co(#585858);
+}
+
+.clicklike {
+    @include po;
+    @include wh(58rem/$base, 61rem/$base);
+    @include baimg('../images/public/pic2.png');
+    top: 22rem/$base;
+    right: 30rem/$base;
+    z-index: 2;
+}
+
+.toppart1 {
+    @include wh(750rem/$base, 561rem/$base);
+    @include pr;
+    .img11 {
+        @include block;
+        @include po;
+        top: 0;
+        left: 0;
+        @include wh(750rem/$base, 561rem/$base);
+    }
+    .po1 {
+        @include po;
+        bottom: 0;
+        left: 0;
+        @include wh(197rem/$base, 97rem/$base);
+        @include te;
+        line-height: 97rem/$base;
+        background: rgba(0, 0, 0, 0.7);
+        @include co(#fff);
+        @include fo(35rem/$base);
+    }
+}
+
+.next1 {
+    height: 135rem/$base;
+    border-bottom: 2rem/$base solid #b2b2b2;
+    @include ov;
+    .left01,
+    .right01 {
+        @include float;
+    }
+    .left01 {
+        height: 135rem/$base;
+        width: 486rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .right01 {
+        img {
+            @include inline-block;
+            @include wh(58rem/$base, 58rem/$base);
+        }
+        width: 262rem/$base;
+        @include te;
+        @include co(#585858);
+        box-sizing:border-box;
+        .p4 {
+            padding-top: 27rem/$base;
+            padding-bottom: 13rem/$base;
+        }
+    }
+    .p2,
+    .p3 {
+        @include co(#a3a3a3);
+        @include te;
+        @include fo(17rem/$base);
+    }
+    .p3 {
+        padding-top: 13rem/$base;
+    }
+    .p1 {
+        @include te;
+        @include fo(24rem/$base);
+        padding-top: 27rem/$base;
+        padding-bottom: 15rem/$base;
+    }
+    .sp2 {
+        img {
+            @include inline-block;
+            @include wh(15rem/$base, 15rem/$base);
+        }
+    }
+}
+
+.aa2 {
+    @include pr;
+    @include ov;
+    @include li(59rem/$base);
+    border-bottom: 2rem/$base solid #b2b2b2;
+    a {
+        @include block;
+        @include te;
+        @include float;
+        @include co(#585858);
+    }
+    .a1 {
+        width: 377rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .a2 {
+        padding-left: 132rem/$base;
+    }
+}
+
+.userinfo {
+    @include ov;
+    padding-bottom: 21rem/$base;
+    border-bottom: 2rem/$base solid #b2b2b2;
+}
+
+.uleft,
+.uright {
+    @include float;
+}
+
+.uleft {
+    width: 148rem/$base;
+    @include ov;
+    img {
+        @include block;
+        margin-left: 51rem/$base;
+        margin-top: 26rem/$base;
+        @include wh(71rem/$base, 71rem/$base);
+        @include border-radius(50%);
+        border: 2rem/$base solid #3c3c3c;
+    }
+}
+
+.p112 {
+    padding-top: 27rem/$base;
+    padding-bottom: 17rem/$base;
+    .time1 {
+        @include co(#a3a3a3);
+        @include fo(17rem/$base);
+        margin-left: 10rem/$base;
+    }
+}
+
+.lookall {
+    @include block;
+    @include li(57rem/$base);
+    @include te;
+    @include co(#a3a3a3);
+    @include fo(19rem/$base);
+    border-bottom: 2rem/$base solid #a9a9a8;
+}
+
+.map {
+    height: 178rem/$base;
+    @include ov;
+    @include pr;
+    border-bottom: 3rem/$base solid #b2b2b2;
+    img {
+        @include block;
+        @include wh(750rem/$base, 178rem/$base);
+    }
+}
+
+.room1 {
+    @include ov;
+    @include pr;
+    height: 231rem/$base;
+    border-bottom: 2rem/$base solid #a3aaa8;
+    .room12,
+    .room13 {
+        @include float;
+    }
+    .room12 {
+        width: 339rem/$base;
+        @include te;
+        box-sizing: border-box;
+        padding-top: 13rem/$base;
+        img {
+            @include block;
+            @include wh(302rem/$base, 202rem/$base);
+            @include mag;
+        }
+    }
+    .room13 {
+        @include pr;
+        .ha1 {
+            padding-top: 33rem/$base;
+            padding-bottom: 35rem/$base;
+            @include fo(28rem/$base);
+        }
+        .ha2 {
+            @include co(#a3a3a3);
+            padding-bottom: 23rem/$base;
+        }
+        .ha3 {
+            @include co(#a3a3a3);
+        }
+    }
+}
+
+.poright {
+    @include po;
+    top: 103rem/$base;
+    right: 33rem/$base;
+    @include fo(35rem/$base);
+    img {
+        @include inline-block;
+        @include wh(24rem/$base, 12rem/$base);
+        margin-left: 8rem/$base;
+        vertical-align: 9rem/$base;
+    }
+}
+
+.alist {
+    a {
+        @include block;
+        @include pr;
+        padding-left: 43rem/$base;
+        @include ba(#eaf3f1);
+        @include co(#505352);
+        border-bottom:1px solid #a3aaa8;
+    }
+    .ap1 {
+        padding-top: 17rem/$base;
+        padding-bottom: 27rem/$base;
+    }
+    .ap2 {
+        padding-bottom: 22rem/$base;
+    }
+    .dingright {
+        @include block;
+        @include po;
+        top: 27rem/$base;
+        right: 23rem/$base;
+        @include ov;
+        .sp_9,
+        .ding1 {
+            @include float;
+        }
+        .sp_9 {
+            @include li(59rem/$base);
+            @include fo(35rem/$base);
+            padding-right:22rem/$base;
+        }
+        .ding1 {
+            @include wh(58rem/$base, 58rem/$base);
+            @include baimg('../images/user/pic6.png');
+        }
+    }
+}
+@import "footer";

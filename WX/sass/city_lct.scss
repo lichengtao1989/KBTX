@@ -1,0 +1,177 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+    @include co(#585858);
+}
+
+// top
+.top1 {
+    height: 110rem/$base;
+    @include ba(#328877);
+    @include co(#fff);
+    @include ov;
+    @include pr;
+}
+
+.top_right {
+    @include po;
+    top: 26rem/$base;
+    right: 59rem/$base;
+}
+
+.search_input_lct {
+    @include block;
+    @include wh(510rem/$base, 59rem/$base);
+    @include ba(#fff);
+    border: none;
+    @include border-radius(20rem/$base);
+    box-sizing: border-box;
+    padding-left: 29rem/$base;
+    @include co(#a3a3a3);
+    outline: none;
+}
+
+.search_btn {
+    @include po;
+    top: 13rem/$base;
+    right: 13rem/$base;
+    @include wh(36rem/$base, 36rem/$base);
+    @include baimg('../images/public/search1.png');
+    z-index: 3;
+}
+
+.top_left {
+    box-sizing: border-box;
+    padding-left: 39rem/$base;
+    padding-top: 44rem/$base;
+    @include co(#fff);
+}
+
+.arrow2 {
+    @include inline-block;
+    @include wh(27rem/$base, 19rem/$base);
+    margin-left: 17rem/$base;
+}
+
+// top
+//CITY
+.rm {
+    @include li(65rem/$base);
+    box-sizing: border-box;
+    padding-left: 67rem/$base;
+    @include fo(28rem/$base);
+}
+
+.rmlist {
+    @include ba(#eaf3f1);
+    border-top: 1px solid #a3aaa8;
+}
+
+.list4 {
+    @include li(54rem/$base);
+    @include ov;
+    border-bottom: 1px solid #a3aaa8;
+    a {
+        @include block;
+        @include float;
+        width: 25%;
+        @include te;
+        @include co(#585858);
+    }
+}
+
+.partss {
+    @include block;
+    @include li(54rem/$base);
+    @include ba(#eaf3f1);
+    border-bottom: 1px solid #afb0b0;
+    box-sizing: border-box;
+    padding-left: 86rem/$base;
+}
+
+.topp {
+    @include li(54rem/$base);
+    border-bottom: 1px solid #afb0b0;
+    box-sizing: border-box;
+    padding-left: 69rem/$base;
+}
+
+//CITY
+
+.text_desc {
+    @include li(55rem/$base);
+    @include fo(18rem/$base);
+    @include co(#aaaaaa);
+    text-align: center;
+}
+//FIXED RIGHT
+.rightfixed {
+    position: fixed;
+    z-index: 3;
+    right: 38rem/$base;
+    top: 409rem/$base;
+    a {
+        @include te;
+        @include block;
+        @include co(#585858);
+        @include fo(19rem/$base);
+        @include li(25rem/$base);
+    }
+}
+
+//FIXED RIGHT
+@import "footer";

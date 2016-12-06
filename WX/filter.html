@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <title>跨步天下-更多筛选</title>
+    <script src="js/font_lct.js"></script>
+    <link rel="stylesheet" href="css/filter_lct.css">
+</head>
+
+<body>
+    <div id="main_page">
+        <div class="top">更多筛选条件</div>
+        <div class="rq">日 期</div>
+        <div class="choicedate">
+          <div class="part2 part21">
+            <p class="p1">入住</p>
+            <p class="p2"><input type="date" placeholder="选择入住时间"></p>
+          </div>
+          <div class="part2">
+            <p class="p1">退房</p>
+            <p class="p2"><input type="date" placeholder="选择退房时间"></p>
+          </div>
+        </div>
+         <div class="rq">价格范围</div>
+         <div class="choicedate jgfw">
+         <div class="prize0">¥0</div>
+         <div class="prize1000">¥1000</div>
+           <input type="range" value="" name="range" min="0" max="1000" step="100" id="rangepartt">
+         </div>
+         <div class="rq">房源所在行政区</div>
+         <div class="choicedate xzq">
+           <select name="" id="select1">
+             <option value="">选择房源所在行政区</option>
+             <option value="">浙江</option>
+             <option value="">上海</option>
+             <option value="">江苏</option>
+           </select>
+         </div>
+         <div class="h376"></div>
+         <a id="search"><img src="images/public/search3.png" alt="">搜索</a>
+    </div>
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script>
+      $('#rangepartt').change(function(event) {
+        /* Act on the event */
+        console.log($(this).val());
+      });
+      var a=1;
+      function fn(){
+        console.log(this)
+        console.log(this.a)
+      };
+      fn();
+      var fn1= new function(){
+        var b=1;
+      };
+      console.log(fn1)
+    </script>
+  
+</body>
+
+</html>

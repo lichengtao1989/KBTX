@@ -59,9 +59,10 @@ $base:50;
 }
 
 .tabout {
+    @include ba(#fff);
     @include wh(750rem/$base, 111rem/$base);
     @include ov;
-}
+
 
 .tab {
     @include float;
@@ -69,6 +70,7 @@ $base:50;
     @include li(105rem/$base);
     border-bottom: 6rem/$base solid #b2b2b2;
     @include block;
+    @include co(#585858);
 }
 
 .tab1 {
@@ -83,7 +85,7 @@ $base:50;
 .active {
     border-bottom: 6rem/$base solid #328877;
 }
-
+}
 .rest {
     height: 149rem/$base;
     box-sizing: border-box;

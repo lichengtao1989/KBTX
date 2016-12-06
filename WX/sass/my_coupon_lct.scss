@@ -1,0 +1,126 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+@import "public";
+html,
+body {
+    min-height: 100%;
+    @include ba(#e0dfdf);
+}
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.tabout {
+    @include ba(#fff);
+    @include wh(750rem/$base, 111rem/$base);
+    @include ov;
+    .tab {
+        @include float;
+        @include te;
+        @include li(105rem/$base);
+        border-bottom: 6rem/$base solid #b2b2b2;
+        @include block;
+        @include co(#585858);
+    }
+    .tab1 {
+        width: 377rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .tab2 {
+        width: 371rem/$base;
+    }
+    .active {
+        border-bottom: 6rem/$base solid #328877;
+    }
+}
+
+.infolist {
+    .info {
+        @include ov;
+        @include pr;
+        width: 691rem/$base;
+        min-height: 219rem/$base;
+        border: 1px solid #9b9b9b;
+        @include border-radius(8rem/$base);
+        @include ba(#fff);
+        @include mag;
+        margin-top: 33rem/$base;
+        box-sizing: border-box;
+        padding-left: 310rem/$base;
+    }
+    .val {
+        @include po;
+        top: 80rem/$base;
+        left: 88rem/$base;
+        @include co(#000000);
+        .sp_val {
+            @include fo(56rem/$base);
+        }
+    }
+    .right_de {
+        @include fo(18.75rem/$base);
+        .de1{padding-top:33rem/$base;padding-bottom:18rem/$base;}
+        .de2{padding-bottom:20rem/$base;@include co(#a3a3a3);}
+        .de3{padding-bottom:25rem/$base;@include co(#a3a3a3);}
+        .de5{padding-top:70rem/$base;padding-bottom:66rem/$base;@include co(#a3a3a3);}
+        .de6,.de7{@include co(#a3a3a3);padding-bottom:20rem/$base;}
+        .de6{padding-top:68rem/$base;}
+    }
+}
+
+@import "footer";
+.kb{@include ba(#e0dfdf);}

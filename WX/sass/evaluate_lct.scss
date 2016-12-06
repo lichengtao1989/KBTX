@@ -1,0 +1,140 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.te1 {
+    @include te;
+    @include li(100rem/$base);
+    border-bottom: 1px solid #b2b2b2;
+    @include co(#585858);
+}
+
+.star {
+    margin-top: 29rem/$base;
+    @include co(#585858);
+}
+
+.leftsp {
+    padding-left: 117rem/$base;
+    padding-right: 232rem/$base;
+    @include fo(28rem/$base);
+}
+
+.rightimg {
+    img {
+        @include inline-block;
+        @include wh(39rem/$base, 36rem/$base);
+    }
+}
+
+.star1 {
+    margin-bottom: 26rem/$base;
+}
+
+.pja {
+    padding-top: 24rem/$base;
+    padding-bottom: 43rem/$base;
+    padding-left: 181rem/$base;
+    margin-bottom: 43rem/$base;
+    a {
+        @include inline-block;
+        @include co(#585858);
+        @include wh(71rem/$base, 71rem/$base);
+        @include te;
+        line-height: 71rem/$base;
+        border: 1px solid #505050;
+        @include border-radius(50%);
+    }
+    .zp {
+        margin-left: 82rem/$base;
+        margin-right: 87rem/$base;
+    }
+}
+
+.text {
+    #textarea {
+        @include block;
+        @include ov;
+        resize: none;
+        @include wh(537rem/$base, 335rem/$base);
+        @include ba(#dddddd);
+        box-sizing: border-box;
+        padding: 20rem/$base;
+        @include mag;
+        outline: none;
+    }
+}
+
+.h179 {
+    height: 179rem/$base;
+}
+
+#tj {
+    @include block;
+    position: fixed;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    @include wh(750rem/$base, 97rem/$base);
+    line-height: 97rem/$base;
+    @include co(#fff);
+    @include ba(#328877);
+    letter-spacing: 4rem/$base;
+    @include te;
+}

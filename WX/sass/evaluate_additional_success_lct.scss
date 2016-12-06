@@ -1,0 +1,167 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.te1 {
+    @include te;
+    @include li(100rem/$base);
+    border-bottom: 1px solid #b2b2b2;
+    @include co(#585858);
+}
+
+.star {
+    margin-top: 29rem/$base;
+    @include co(#585858);
+}
+
+.leftsp {
+    padding-left: 117rem/$base;
+    padding-right: 232rem/$base;
+    @include fo(28rem/$base);
+}
+
+.rightimg {
+    img {
+        @include inline-block;
+        @include wh(39rem/$base, 36rem/$base);
+    }
+}
+
+.star1 {
+    margin-bottom: 26rem/$base;
+}
+
+.my {
+    padding: 60rem/$base 45rem/$base 29rem/$base 72rem/$base;
+}
+
+.part1 {
+    @include ov;
+    @include pr;
+    @include li(75rem/$base);
+    img {
+        @include inline-block;
+        @include wh(71rem/$base, 71rem/$base);
+        border: 1px solid #333333;
+        @include border-radius(50%);
+        margin-right: 22rem/$base;
+    }
+    span {
+        @include inline-block;
+        vertical-align: 24rem/$base;
+        @include fo(19rem/$base);
+    }
+    .sj {
+        @include co(#a3a3a3);
+        margin-left: 10rem/$base;
+        margin-right: 283rem/$base;
+    }
+    .pjdj {
+        @include po;
+        top: 0;
+        right: 20rem/$base;
+        z-index: 2;
+    }
+}
+
+.pj_cont {
+    @include pr;
+    width: 633rem/$base;
+    padding-top: 26rem/$base;
+    padding-bottom: 26rem/$base;
+    .posc {
+        @include po;
+        top: 0;
+        right: 0;
+        @include wh(90rem/$base, 33rem/$base);
+        @include te;
+        line-height: 33rem/$base;
+        border: 1px solid #4e4e4e;
+        @include border-radius(10rem/$base);
+        z-index: 2;
+        @include fo(19rem/$base);
+    }
+}
+
+.zjpj {
+    @include block;
+    @include wh(122rem/$base, 33rem/$base);
+    @include te;
+    @include co(#3a8d7c);
+    border: 1px solid #3a8d7c;
+    @include border-radius(12rem/$base);
+    line-height: 33rem/$base;
+    @include mag;
+}
+
+#textareapart {
+    @include block;
+    @include wh(537rem/$base, 180rem/$base);
+    min-height:180rem/$base;
+    resize: none;
+    border: 1px solid #6a6a6a;
+    @include mag;
+    @include ba(#dddddd);
+    box-sizing:border-box;
+    padding:24rem/$base;
+    outline:none;
+}
+.h94{
+    height:84rem/$base;
+}
+@import "footer";

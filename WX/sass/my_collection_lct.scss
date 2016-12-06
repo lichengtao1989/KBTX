@@ -1,0 +1,131 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.bigimg {
+    @include block;
+    @include wh(750rem/$base, 561rem/$base);
+}
+
+.info {
+    @include pr;
+    .clicklike {
+        @include po;
+        @include wh(58rem/$base,61rem/$base);
+        @include baimg('../images/public/pic2.png');
+        top:22rem/$base;
+        right:30rem/$base;
+        z-index: 2;
+    }
+}
+
+.nextinfo {
+    height: 171rem/$base;
+    @include pr;
+    @include ov;
+}
+
+.left1,
+.right1 {
+    @include float;
+}
+
+.left1 {
+    width: 371.75rem/$base;
+    box-sizing: border-box;
+    padding-top: 57rem/$base;
+    padding-left: 81rem/$base;
+    @include co(#585858);
+    @include fo(35rem/$base);
+}
+
+.pj {
+    @include float;
+    img {
+        @include inline-block;
+        @include wh(16rem/$base, 15rem/$base);
+    }
+}
+
+.right1 {
+    width: 374rem/$base;
+    @include ov;
+    @include pr;
+    .p1 {
+        padding-top: 43rem/$base;
+        padding-bottom: 15rem/$base;
+    }
+    .po1 {
+        @include fo(17rem/$base);
+        @include co(#a3a3a3);
+        @include float;
+    }
+    .p2 {
+        padding-bottom: 13rem/$base;
+        @include ov;
+    }
+}
+
+.p13 {
+    @include co(#a3a3a3);
+    @include fo(17rem/$base);
+}
+
+.pjsl {
+    @include fo(17rem/$base);
+}

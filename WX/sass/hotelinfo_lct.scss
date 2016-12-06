@@ -1,0 +1,217 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.text1 {
+    @include fo(25rem/$base);
+    @include li(66rem/$base);
+    @include te;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.part2 {
+    height: 74rem/$base;
+    @include pr;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.telnum {
+    @include block;
+    @include po;
+    @include wh(259rem/$base, 30rem/$base);
+    @include te;
+    line-height: 30rem/$base;
+    top: 20rem/$base;
+    right: 24rem/$base;
+    border: 2rem/$base solid #328877;
+    @include co(#328877);
+    @include border-radius(10rem/$base);
+    z-index: 2;
+}
+
+.text2,
+.text3 {
+    padding-left: 35rem/$base;
+    @include co(#585858);
+}
+
+.text2 {
+    @include fo(16rem/$base);
+    padding-top: 14rem/$base;
+    padding-bottom: 6rem/$base;
+}
+
+.text3 {
+    @include fo(14rem/$base);
+}
+
+.h57 {
+    @include te;
+    @include li(66rem/$base);
+    @include co(#585858);
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.h74 {
+    @include te;
+    @include li(74rem/$base);
+    @include co(#585858);
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.part10 {
+    @include ov;
+    height: 241rem/$base;
+    border-bottom: 1px solid #b2b2b2;
+    @include pr;
+}
+
+.part1 {
+    @include float;
+    width: 20%;
+    height: 120.5rem/$base;
+    @include te;
+    box-sizing: border-box;
+    padding-top: 27rem/$base;
+    img {
+        @include block;
+        @include mag;
+    }
+}
+
+.part1:nth-of-type(1) {
+    img {
+        @include wh(48rem/$base, 50rem/$base);
+    }
+}
+
+.part1:nth-of-type(2) {
+    img {
+        @include wh(52rem/$base, 52rem/$base);
+    }
+}
+
+.part1:nth-of-type(3) {
+    img {
+        @include wh(55rem/$base, 44rem/$base);
+    }
+}
+
+.part1:nth-of-type(4) {
+    img {
+        @include wh(56rem/$base, 48rem/$base);
+    }
+}
+
+.part1:nth-of-type(5) {
+    img {
+        @include wh(62rem/$base, 46rem/$base);
+    }
+}
+
+.part1:nth-of-type(6) {
+    img {
+        @include wh(54rem/$base, 55rem/$base);
+    }
+}
+
+.part1:nth-of-type(7) {
+    img {
+        @include wh(55rem/$base, 53rem/$base);
+    }
+}
+
+.part1:nth-of-type(8) {
+    img {
+        @include wh(59rem/$base, 56rem/$base);
+    }
+}
+
+.part1:nth-of-type(9) {
+    img {
+        @include wh(51rem/$base, 59rem/$base);
+    }
+}
+
+.part1:nth-of-type(10) {
+    img {
+        @include wh(65rem/$base, 57rem/$base);
+    }
+}
+
+.p1 {
+    @include te;
+    @include co(#585858);
+    @include fo(19rem/$base);
+    padding-top: 12rem/$base;
+}
+
+.desc,
+.desc1 {
+    @include ov;
+    @include co(#585858);
+}
+
+.s1,
+.s2 {
+    @include float;
+}
+.desc{padding:25rem/$base 55rem/$base;}
+.desc1{margin-bottom:33rem/$base;}
+.desc2{line-height:1.5;}
+.s1{margin-right:168rem/$base;}

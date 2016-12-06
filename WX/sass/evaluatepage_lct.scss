@@ -1,0 +1,158 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.details1 {
+    @include ov;
+    box-sizing: border-box;
+    padding-left: 128rem/$base;
+    @include ov;
+    @include pr;
+    @include fo(28rem/$base);
+    @include co(#585858);
+    img {
+        @include block;
+        @include wh(38rem/$base, 36rem/$base);
+        @include float;
+        margin-right: 10rem/$base;
+    }
+}
+
+.left1,
+.right1 {
+    @include float;
+}
+
+.toppj1 {
+    @include fo(28rem/$base);
+    @include te;
+    margin-top: 24rem/$base;
+    margin-bottom: 12rem/$base;
+    @include co(#585858);
+}
+
+.pjsl {
+    @include fo(21rem/$base);
+    @include te;
+    margin-bottom: 28rem/$base;
+    @include co(#a3a3a3);
+}
+
+.line11 {
+    height: 2rem/$base;
+    @include ba(#b2b2b2);
+    margin-bottom: 10rem/$base;
+}
+
+.details11,
+.details12,
+.details13 {
+    margin-bottom: 19rem/$base;
+}
+
+.details14 {
+    margin-bottom: 12rem/$base;
+}
+
+.left1 {
+    padding-top: 5rem/$base;
+    margin-right: 218rem/$base;
+}
+
+.line112 {
+    height: 2rem/$base;
+    @include ba(#b2b2b2);
+}
+
+.float {
+    @include float;
+}
+
+.tx {
+    @include block;
+    @include wh(71rem/$base, 71rem/$base);
+    border: 2rem/$base solid #242424;
+    @include border-radius(50%);
+}
+
+.shang {
+    @include ov;
+}
+
+.pjdeatil {
+    box-sizing: border-box;
+    padding: 52rem/$base;
+    @include co(#585858);
+    border-bottom:3rem/$base solid #b2b2b2;
+}
+
+.nc,
+.time {
+    padding-top: 28rem/$base;
+}
+
+.nc {
+    padding-left: 22rem/$base;
+    padding-right: 10rem/$base;
+}
+
+.time {
+    @include co(#a3a3a3);
+    @include fo(17rem/$base);
+}
+.xia{padding-top:26rem/$base;}

@@ -1,0 +1,271 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+    @include co(#585858);
+}
+
+.to1,
+.to2 {
+    @include te;
+}
+
+.to1 {
+    @include fo(30rem/$base);
+    padding-top: 24rem/$base;
+    padding-bottom: 11rem/$base;
+}
+
+.to2 {
+    @include co(#a3a3a3);
+    padding-bottom: 18rem/$base;
+    border-bottom: 2rem/$base solid #b2b2b2;
+}
+
+.part2 {
+    @include ov;
+    border-bottom: 3rem/$base solid #b2b2b2;
+    height: 108rem/$base;
+    .part01,
+    .part02 {
+        @include float;
+        @include te;
+        height: 108rem/$base;
+    }
+    .part01 {
+        width: 377rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .part02 {
+        width: 371rem/$base;
+    }
+    .p01 {
+        padding-top: 21rem/$base;
+        padding-bottom: 23rem/$base;
+    }
+    .p02 {
+        @include co(#a3a3a3);
+    }
+}
+
+.infos {
+    @include li(47rem/$base);
+    border-bottom: 1px solid #b2b2b2;
+    .sp1 {
+        margin-left: 90rem/$base;
+    }
+}
+
+.text1 {
+    @include li(69rem/$base);
+    @include te;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.det {
+    @include pr;
+    height: 57rem/$base;
+    box-sizing: border-box;
+    padding-top: 19rem/$base;
+    padding-left: 73rem/$base;
+    border-bottom: 1px solid #b2b2b2;
+    .popart {
+        @include po;
+        top: 10rem/$base;
+        right: 63rem/$base;
+        select {
+            -webkit-appearance: none;
+            /*for chrome*/
+            border: none;
+            outline: none;
+            width: 40rem/$base;
+            @include te;
+        }
+    }
+    .popart:after {
+        content: "";
+        @include wh(13rem/$base, 18rem/$base);
+        @include baimg('../images/public/jtr.png');
+        @include po;
+        top: 5rem/$base;
+        right: 0;
+    }
+    .popart1 {
+        @include po;
+        top: 10rem/$base;
+        right: 53rem/$base;
+        input {
+            border: none;
+            @include inline-block;
+            width: 300rem/$base;
+            outline: none;
+            text-align: right;
+        }
+    }
+}
+
+.prize {
+    @include li(56rem/$base);
+    border-bottom: 1px solid #b2b2b2;
+    @include te;
+    @include fo(20rem/$base);
+}
+
+.det2 {
+    box-sizing: border-box;
+    padding-left: 73rem/$base;
+    padding-top: 22rem/$base;
+    padding-bottom: 17rem/$base;
+    border-bottom: 1px solid #b2b2b2;
+    @include pr;
+    .po03 {
+        @include po;
+        top: 18rem/$base;
+        right: 53rem/$base;
+    }
+}
+
+.gpart {
+    @include ba(#eaf3f1);
+    .lpart {
+        @include pr;
+        border-bottom: 1px solid #a3aaa8;
+        @include li(43rem/$base);
+        padding-left: 87rem/$base;
+        @include ov;
+        .dpo {
+            @include po;
+            top: 11rem/$base;
+            right: 53rem/$base;
+            line-height: 1;
+        }
+        .checkbox1 {
+            vertical-align: -5rem/$base;
+            outline: none;
+        }
+    }
+}
+
+.sjzf {
+    @include li(65rem/$base);
+    padding-left: 74rem/$base;
+    @include pr;
+    @include fo(28rem/$base);
+    border-bottom: 1px solid #a3aaa8;
+    .posjzf {
+        @include po;
+        top: 21rem/$base;
+        right: 53rem/$base;
+        line-height: 1;
+    }
+}
+
+.zffs {
+    @include li(62rem/$base);
+    @include te;
+    border-bottom: 1px solid #a3aaa8;
+}
+
+.zf {
+    @include li(48rem/$base);
+    border-bottom: 1px solid #a3aaa8;
+    padding-left: 74rem/$base;
+    @include pr;
+    .dh {
+        @include po;
+        top: 0;
+        right: 63rem/$base;
+        @include none;
+    }
+}
+
+.active {
+    @include ba(#eaf3f1);
+    .dh {
+        @include block;
+    }
+}
+
+.qx1 {
+    @include te;
+    padding-top: 21rem/$base;
+    padding-bottom: 17rem/$base;
+    @include fo(23.44rem/$base);
+    font-weight: lighter;
+}
+
+.qx2 {
+    @include te;
+    @include fo(23.44rem/$base);
+    font-weight: lighter;
+}
+
+.h147 {
+    height: 147rem/$base;
+}
+.fixed_btn{
+    @include wh(750rem/$base,96rem/$base);
+    @include ba(#328877);
+    position: fixed;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    @include te;
+    @include co(#fff);
+    line-height: 96rem/$base;
+    @include fo(35rem/$base);
+}

@@ -1,0 +1,234 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+    @include ba(#e0dfdf);
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+    @include co(#4c4c4c);
+}
+
+.text1 {
+    padding-left: 41rem/$base;
+}
+
+.text01 {
+    padding-top: 27rem/$base;
+    padding-bottom: 18rem/$base;
+}
+
+.text02 {
+    padding-bottom: 21rem/$base;
+    border-bottom: 3rem/$base solid #b1b1b1;
+}
+
+.je {
+    @include ba(#fff);
+    @include li(82rem/$base);
+    border-bottom: 1px solid #b2b2b2;
+    @include pr;
+    padding-left: 42rem/$base;
+    @include co(#585858);
+    .poright {
+        line-height: 1;
+        @include po;
+        top: 11rem/$base;
+        right: 63rem/$base;
+        text-align: right;
+        .num {
+            padding-top: 10rem/$base;
+        }
+    }
+}
+
+.a2 {
+    @include co(#585858);
+    @include ov;
+    @include li(79rem/$base);
+    border-bottom: 1px solid #b2b2b2;
+    @include ba(#fff);
+    a {
+        @include block;
+        @include float;
+        height: 79rem/$base;
+        @include te;
+        @include co(#585858);
+    }
+    .cancel {
+        width: 377rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .pay {
+        width: 371rem/$base;
+        font-weight: bold;
+    }
+}
+
+.h41 {
+    height: 41rem/$base;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.ptext1 {
+    @include te;
+    padding-top: 25rem/$base;
+    padding-bottom: 8rem/$base;
+}
+
+.ptext2 {
+    @include te;
+    @include fo(19rem/$base);
+    @include co(#aaaaaa);
+    padding-bottom: 31rem/$base;
+}
+
+.next {
+    @include ba(#fff);
+}
+
+.part3 {
+    padding-bottom: 28rem/$base;
+    @include ov;
+    .part01 {
+        @include float;
+        width: 33.33333%;
+        @include te;
+        .pp1 {
+            font-weight: bold;
+            padding-bottom: 15rem/$base;
+        }
+    }
+    .part011 {
+        @include li(59rem/$base);
+    }
+    .c1 {
+        @include co(#a3a3a3);
+    }
+}
+
+.text03 {
+    padding-bottom: 23rem/$base;
+    @include ov;
+    @include fo(19rem/$base);
+    .text001,
+    .text002,
+    .text003 {
+        @include float;
+    }
+    .text001 {
+        width: 346rem/$base;
+        text-align: right;
+    }
+    .text002 {
+        width: 65rem/$base;
+        text-align: center;
+    }
+}
+
+.adress {
+    @include co(#a3a3a3);
+    padding-bottom: 30rem/$base;
+    @include te;
+}
+
+.aaa3 {
+    @include ov;
+    border-top: 3rem/$base solid #b2b2b2;
+    border-bottom: 3rem/$base solid #b2b2b2;
+    a {
+        @include float;
+        @include block;
+        @include wh(250rem/$base, 78rem/$base);
+        line-height: 78rem/$base;
+        @include te;
+        @include co(#585858);
+    }
+    .as2 {
+        @include pr;
+    }
+    .as2:before {
+        content: "";
+        @include wh(2rem/$base, 78rem/$base);
+        @include po;
+        top: 0;
+        left: 0;
+        @include ba(#b2b2b2);
+    }
+    .as2:after {
+        content: "";
+        @include wh(2rem/$base, 78rem/$base);
+        @include po;
+        top: 0;
+        right: 0;
+        @include ba(#b2b2b2);
+    }
+}
+
+.lxkf {
+    @include block;
+    @include mag;
+    @include wh(305rem/$base, 37rem/$base);
+    @include te;
+    line-height: 35rem/$base;
+    @include ba(#fff);
+    border:1px solid #1d7b69;
+    @include co(#1d7b69);
+    @include border-radius(10rem/$base);
+    margin-top: 194rem/$base;
+}

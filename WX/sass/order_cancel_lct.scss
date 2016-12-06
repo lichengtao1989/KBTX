@@ -1,0 +1,208 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+    @include ba(#e0dfdf);
+    @include co(#585858);
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.desc1 {
+    @include li(76rem/$base);
+    box-sizing: border-box;
+    padding-left: 41rem/$base;
+}
+
+.next1 {
+    @include pr;
+    height: 82rem/$base;
+    border-top: 2rem/$base solid #b2b2b2;
+    border-bottom: 3rem/$base solid #b2b2b2;
+    @include ba(#fff);
+}
+
+.left1 {
+    padding-left: 42rem/$base;
+    line-height: 82rem/$base;
+}
+
+.po1 {
+    @include po;
+    top: 12rem/$base;
+    right: 63rem/$base;
+    text-align: right;
+}
+
+.p2 {
+    padding-top: 10rem/$base;
+}
+
+.a1 {
+    @include block;
+    @include li(78rem/$base);
+    @include te;
+    @include co(#585858);
+    border-bottom: 3rem/$base solid #9f9e9e;
+    @include ba(#fff);
+    font-weight: bold;
+}
+
+.square {
+    height: 41rem/$base;
+    @include ba(#e0dfdf);
+}
+
+.nextinfo {
+    @include ba(#fff);
+    border-top: 2rem/$base solid #b2b2b2;
+    .tt1 {
+        @include te;
+        padding-top: 25rem/$base;
+        padding-bottom: 6rem/$base;
+        @include co(#585858);
+    }
+    .tt2 {
+        @include fo(19rem/$base);
+        @include te;
+        @include co(#a3a3a3);
+        padding-bottom: 32rem/$base;
+    }
+    .part3 {
+        @include ov;
+        .part1,
+        .part2,
+        .part3 {
+            @include float;
+            width: 250rem/$base;
+            @include te;
+        }
+        .p01,
+        .p02 {
+            padding-bottom: 15rem/$base;
+            @include co(#585858);
+        }
+        .times,
+        .timee,
+        .part2 {
+            @include co(#a3a3a3);
+        }
+        .part2 {
+            padding-top: 20rem/$base;
+        }
+    }
+    .part22 {
+        padding-top: 28rem/$base;
+        @include ov;
+        .part21,
+        .lines,
+        .phone {
+            @include float;
+        }
+        .part21 {
+            width: 346rem/$base;
+            text-align: right;
+        }
+        .lines {
+            @include te;
+            width: 65rem/$base;
+        }
+    }
+    .adress {
+        @include te;
+        @include co(#aaaaaa);
+        padding-top: 24rem/$base;
+        padding-bottom: 30rem/$base;
+        border-bottom: 1px solid #b2b2b2;
+    }
+}
+
+.a3 {
+    border-bottom: 2rem/$base solid #9c9c9c;
+    @include ba(#fff);
+    @include li(79rem/$base);
+    a {
+        @include block;
+        @include float;
+        @include te;
+    }
+    .a01 {
+        width: 250rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .a02 {
+        width: 254rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .a03 {
+        padding-left: 22rem/$base;
+    }
+}
+
+.linkkf {
+    @include wh(305rem/$base, 37rem/$base);
+    @include block;
+    @include mag;
+    @include te;
+    border: 2rem/$base solid #348977;
+    @include co(#348977);
+    line-height: 37rem/$base;
+    @include border-radius(10rem/$base);
+    margin-top:231rem/$base;
+}

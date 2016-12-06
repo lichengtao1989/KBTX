@@ -1,0 +1,164 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+@import "public";
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+html,
+body {
+    min-height: 100%;
+    @include ba(#e0dfdf);
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+.tab_out {
+    @include ba(#fff);
+    @include ov;
+    @include wh(750rem/$base, 111rem/$base);
+    @include co(#585858);
+    border-bottom: 23rem/$base solid #e0dfdf;
+    .tab {
+        @include float;
+        height: 106rem/$base;
+        border-bottom: 6rem/$base solid #b2b2b2;
+        @include te;
+        line-height: 106rem/$base;
+    }
+    .active {
+        border-bottom: 6rem/$base solid #328877;
+    }
+    .tab:nth-of-type(1) {
+        width: 377rem/$base;
+        border-right: 2rem/$base solid #b2b2b2;
+    }
+    .tab:nth-of-type(2) {
+        width: 371rem/$base;
+    }
+}
+
+.part1 {
+    height: 78rem/$base;
+    @include pr;
+    box-sizing: border-box;
+    padding-left: 48rem/$base;
+    padding-top: 19rem/$base;
+    border-bottom: 2rem/$base solid #b2b2b2;
+    img {
+        @include inline-block;
+        @include wh(50rem/$base, 43rem/$base);
+    }
+    .status {
+        @include po;
+        top: 31rem/$base;
+        right: 46rem/$base;
+        font-weight: bold;
+    }
+    .sp1 {
+        vertical-align: 5rem/$base;
+    }
+}
+
+.info {
+    @include ba(#fff);
+    margin-bottom: 28rem/$base;
+}
+
+.part2 {
+    @include pr;
+    box-sizing: border-box;
+    padding-left: 48rem/$base;
+    border-bottom: 2rem/$base solid #b2b2b2;
+    height: 150rem/$base;
+    padding-top: 22rem/$base;
+    .info1 {
+        font-weight: bold;
+        margin-bottom: 28rem/$base;
+    }
+    .info2 {
+        margin-bottom: 21rem/$base;
+        @include fo(19rem/$base);
+    }
+    .info3 {
+        @include fo(19rem/$base);
+    }
+    .prize {
+        @include po;
+        top: 71rem/$base;
+        right: 53rem/$base;
+        font-weight: bold;
+    }
+}
+
+.part3 {
+    border-bottom: 2rem/$base solid #b2b2b2;
+    @include ov;
+    a {
+        @include block;
+        @include float;
+        @include li(57rem/$base);
+        @include te;
+        font-weight: bold;
+        @include co(#585858);
+    }
+}
+
+.neworder {
+    @include block;
+    @include te;
+    width: 750rem/$base;
+}
+
+@import "footer";

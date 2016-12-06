@@ -1,0 +1,113 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+html,
+body {
+    min-height: 100%;
+    @include ba(#e0dfdf);
+}
+
+.textareapart {
+    @include block;
+    @include wh(708rem/$base, 515rem/$base);
+    border: 1px solid #9d9d9d;
+    @include border-radius(10rem/$base);
+    margin: 19rem/$base auto 33rem/$base auto;
+    @include ov;
+    box-sizing: border-box;
+    padding: 15rem/$base;
+}
+
+.addpic {
+    @include wh(130rem/$base, 129rem/$base);
+    @include te;
+    line-height: 129rem/$base;
+    border: 1px solid #9d9d9d;
+    @include border-radius(10rem/$base);
+    @include po;
+    top: 378rem/$base;
+    left: 49rem/$base;
+    z-index: 2;
+}
+
+.bz {
+    @include block;
+    @include wh(701rem/$base, 90rem/$base);
+    border: 1px solid #9d9d9d;
+    @include border-radius(10rem/$base);
+    @include mag;
+    @include ba(#fff);
+    box-sizing: border-box;
+    padding-left: 25rem/$base;
+}
+
+.tj {
+    @include block;
+    @include wh(663rem/$base, 65rem/$base);
+    line-height: 65rem/$base;
+    @include ba(#328877);
+    @include co(#fff);
+    @include fo(28rem/$base);
+    font-weight: bold;
+    letter-spacing: 6rem/$base;
+    @include mag;
+    margin-top: 113rem/$base;
+     @include border-radius(10rem/$base);
+     @include te;
+}

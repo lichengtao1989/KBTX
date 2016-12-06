@@ -1,0 +1,129 @@
+@import "compass/css3";
+@import "var";
+$base:50;
+.ov {
+    @include ov;
+}
+
+.float {
+    @include float;
+}
+
+
+/*main style begin*/
+
+
+/*main style begin*/
+
+@keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes opacityShow {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0.6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#main_page {
+    transition: all 0.75s;
+    animation: opacityShow 0.75s;
+    -webkit-animation: opacityShow 0.75s;
+    @include ov;
+    @include pr;
+    box-sizing: border-box;
+    width: 750rem/$base;
+    @include mag;
+    @include fo(24rem/$base);
+}
+
+html,
+body {
+    min-height: 100%;
+    @include ba(#e0dfdf);
+}
+
+.pad72 {
+    box-sizing: border-box;
+    padding-left: 72rem/$base;
+    padding-top: 51rem/$base;
+}
+
+.text1 {
+    padding-bottom: 23rem/$base;
+    @include co(#4c4c4c);
+}
+
+.textarea123 {
+    @include block;
+    @include wh(605rem/$base, 277rem/$base);
+    @include ba(#fff);
+    border: 1px solid #696969;
+    margin-bottom: 41rem/$base;
+}
+
+.jia2 {
+    @include ov;
+}
+
+.jia11,
+.jia12 {
+    @include float;
+    @include wh(286rem/$base, 190rem/$base);
+    @include te;
+    @include ba(#fff);
+    line-height: 190rem/$base;
+    border: 1px solid #727272;
+}
+
+.jia11 {
+    margin-right: 34rem/$base;
+}
+
+.tj {
+    @include block;
+    @include wh(335rem/$base, 107rem/$base);
+    line-height: 107rem/$base;
+    @include te;
+    margin-left: 138rem/$base;
+    margin-top: 60rem/$base;
+    @include ba(#000);
+    @include co(#fff);
+    @include fo(28rem/$base);
+    letter-spacing: 6rem/$base;
+    font-weight: bold;
+    @include border-radius(20rem/$base);
+    margin-bottom: 63rem/$base;
+}
+
+.linkkf {
+    @include block;
+    @include wh(305rem/$base, 37rem/$base);
+    line-height: 37rem/$base;
+    @include te;
+    border: 2rem/$base solid #348977;
+    @include border-radius(15rem/$base);
+    margin-left: 138rem/$base;
+    @include ba(#fff);
+    @include co(#348977);
+}
